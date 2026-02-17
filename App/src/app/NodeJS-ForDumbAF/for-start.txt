@@ -1,0 +1,11 @@
+# Шоб стартануть сервак
+
+pm2 start server.js
+
+# Полезные штучки
+
+pm2 list          # список всех процессов
+pm2 logs          # просмотр логов
+pm2 restart server # перезапуск приложения
+pm2 stop server   # остановка приложения
+pm2 delete server # удаление процесса из PM2
