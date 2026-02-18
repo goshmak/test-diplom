@@ -1,0 +1,17 @@
+Правильно - alembic, а не alimbic, дебил!!!
+
+Адрес БД находитсчя в файле alembic.ini в строке с переменной sqlalchemy.url
+
+alembic init #name          - Создание окружения для alembic с названием #name 
+(перед следующими командами надо помениять адрес БД в alembic.ini)
+
+alembic revision -m "#name" - Создание ревизии с названием #name
+
+alembic upgrade head        - Повышение ревизии до последней версии (Применение последней ревизии)
+alembic upgrade +№          - Повышение ревизии БД на № версий
+
+alembic downgrade -№        - Понижение ревизии БД на № версий
+alembic downgrade base      - Понижение ревизии БД до начальной версии
+
+alembic history             - История изменений (версий/ревизий)
+alembic current             - Показывает id текущей ревизии 
