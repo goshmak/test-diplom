@@ -1,0 +1,13 @@
+Для создания репозитория:
+1- git init                                                                 - Создание репозитория
+2- git add .                                                                - Добавление всех файлов из папки в репозиторий
+3- git commit -m "#commit_name"                                             - Создание первого коммита
+4- git branch -M main                                                       - Создание главной ветки
+5- Создание репозитория на GitHub с названием #repo_name
+6- git remote add #repo_name https://github.com/#login/#repo_name.git       - Привязка к GitHub
+7- git push -u #repo_name main                                              - Загрузка кода на GitHub
+
+Для подгрузки кода на GitHub:
+1- git add .
+2- git commit -m "#commit_name"
+3- git push -u #repo_name #branch_name
